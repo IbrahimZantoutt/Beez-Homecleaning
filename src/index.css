@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: 'DM Sans', sans-serif;
+  }
+
+  body {
+    @apply bg-white text-[#0D0D0D] antialiased;
+  }
+
+  /* RTL support */
+  [dir="rtl"] {
+    font-family: 'DM Sans', 'Noto Sans Arabic', sans-serif;
+  }
+}
+
+@layer utilities {
+  .hex-pattern {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hex-shape {
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  }
+}
+
+/* Hexagon animation keyframes */
+@keyframes hexFloat1 {
+  0%, 100% { transform: translateY(0px) rotate(0deg); opacity: 0.12; }
+  50% { transform: translateY(-18px) rotate(8deg); opacity: 0.22; }
+}
+@keyframes hexFloat2 {
+  0%, 100% { transform: translateY(0px) rotate(0deg); opacity: 0.08; }
+  50% { transform: translateY(-25px) rotate(-12deg); opacity: 0.18; }
+}
+@keyframes hexFloat3 {
+  0%, 100% { transform: translateY(0px) rotate(0deg); opacity: 0.1; }
+  50% { transform: translateY(-12px) rotate(15deg); opacity: 0.2; }
+}
+
+.animate-hex1 { animation: hexFloat1 7s ease-in-out infinite; }
+.animate-hex2 { animation: hexFloat2 9s ease-in-out infinite 1s; }
+.animate-hex3 { animation: hexFloat3 5s ease-in-out infinite 2s; }
+.animate-hex4 { animation: hexFloat1 8s ease-in-out infinite 0.5s; }
+.animate-hex5 { animation: hexFloat2 6s ease-in-out infinite 3s; }
+.animate-hex6 { animation: hexFloat3 10s ease-in-out infinite 1.5s; }

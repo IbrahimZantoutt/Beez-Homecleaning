@@ -1,0 +1,269 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Leistungen",
+    "about": "Über uns",
+    "pricing": "Preise",
+    "contact": "Kontakt",
+    "cta": "Jetzt buchen"
+  },
+  "home": {
+    "hero": {
+      "badge": "Professionelle Reinigung",
+      "title": "Professionelle Reinigungsdienste in Herne",
+      "subtitle": "Ihr zuverlässiger Reinigungsservice in Herne und Umgebung. Wir sorgen für ein makelloses Zuhause und saubere Büros – pünktlich, gründlich und diskret.",
+      "cta1": "Jetzt anfragen",
+      "cta2": "Preise ansehen"
+    },
+    "stats": {
+      "clients": "Zufriedene Kunden",
+      "cities": "Städte",
+      "experience": "Jahre Erfahrung",
+      "clientsValue": "500+",
+      "citiesValue": "5",
+      "experienceValue": "8+"
+    },
+    "services": {
+      "title": "Unsere Leistungen",
+      "subtitle": "Von der Haushaltsreinigung bis zur Gebäudereinigung – wir bieten maßgeschneiderte Lösungen für jeden Bedarf.",
+      "home": {
+        "title": "Haushaltsreinigung",
+        "desc": "Regelmäßige Reinigung Ihres Zuhauses, damit Sie mehr Zeit für das Wesentliche haben."
+      },
+      "deep": {
+        "title": "Grundreinigung",
+        "desc": "Intensive Tiefenreinigung für ein makellos sauberes Ergebnis – ideal für Umzüge oder Frühjahrsputz."
+      },
+      "staircase": {
+        "title": "Treppenreinigung",
+        "desc": "Professionelle Reinigung von Treppenhäusern und Gemeinschaftsbereichen."
+      },
+      "window": {
+        "title": "Fensterreinigung",
+        "desc": "Streifenfreie, glänzende Fenster – für mehr Licht und einen klaren Durchblick."
+      },
+      "office": {
+        "title": "Büroreinigung",
+        "desc": "Saubere Arbeitsumgebungen für mehr Produktivität und Wohlbefinden Ihrer Mitarbeiter."
+      },
+      "building": {
+        "title": "Gebäudereinigung",
+        "desc": "Professionelle Außen- und Innenreinigung für Wohn- und Geschäftsgebäude."
+      },
+      "learnMore": "Mehr erfahren"
+    },
+    "why": {
+      "title": "Warum Beez?",
+      "subtitle": "Wir sind mehr als nur ein Reinigungsservice – wir sind Ihr Partner für ein sauberes Zuhause.",
+      "points": [
+        "Zuverlässiges und erfahrenes Team",
+        "Flexible Terminvereinbarung",
+        "Umweltfreundliche Reinigungsmittel",
+        "Faire und transparente Preise",
+        "Vollständig versichert und zertifiziert"
+      ],
+      "cta": "Mehr über uns"
+    },
+    "serviceArea": {
+      "title": "Unser Einzugsgebiet",
+      "cities": "Herne · Bochum · Gelsenkirchen · Recklinghausen · Dortmund"
+    },
+    "testimonials": {
+      "title": "Was unsere Kunden sagen",
+      "subtitle": "Über 500 zufriedene Kunden vertrauen auf unsere Reinigungsleistungen.",
+      "items": [
+        {
+          "name": "Maria Schmidt",
+          "location": "Herne",
+          "text": "Beez hat unser Büro komplett transformiert. Das Team ist unglaublich gründlich und pünktlich. Ich kann sie nur empfehlen!",
+          "rating": 5
+        },
+        {
+          "name": "Thomas Müller",
+          "location": "Bochum",
+          "text": "Endlich ein Reinigungsservice, auf den man sich verlassen kann. Faire Preise, tolle Ergebnisse und immer freundlich.",
+          "rating": 5
+        },
+        {
+          "name": "Sabine Koch",
+          "location": "Gelsenkirchen",
+          "text": "Die Grundreinigung war fantastisch! Meine Wohnung glänzt wie nie zuvor. Sehr professionell und diskret.",
+          "rating": 5
+        }
+      ]
+    },
+    "cta": {
+      "title": "Bereit für ein sauberes Zuhause?",
+      "subtitle": "Kontaktieren Sie uns noch heute und vereinbaren Sie Ihren ersten Termin. Wir sind für Sie da.",
+      "button": "Jetzt anfragen"
+    }
+  },
+  "services": {
+    "hero": {
+      "title": "Unsere Reinigungsleistungen in Herne",
+      "subtitle": "Professionelle Reinigung für Privat- und Gewerbekunden in Herne und Umgebung"
+    },
+    "items": [
+      {
+        "title": "Haushaltsreinigung",
+        "desc": "Regelmäßige Reinigung Ihres Zuhauses nach Ihrem Zeitplan. Küche, Bad, Wohnzimmer, Schlafzimmer – wir reinigen gründlich und sorgfältig. Flexible wöchentliche, zweiwöchentliche oder monatliche Termine.",
+        "features": ["Küche & Bad", "Staubsaugen & Wischen", "Oberflächen reinigen", "Müll entleeren"]
+      },
+      {
+        "title": "Grundreinigung",
+        "desc": "Intensive Tiefenreinigung für besondere Anlässe: vor dem Einzug, nach dem Auszug oder als saisonaler Frühjahrsputz. Wir hinterlassen kein Detail unberührt.",
+        "features": ["Hinter Möbeln reinigen", "Schränke innen & außen", "Fenster & Rahmen", "Küchengeräte innen"]
+      },
+      {
+        "title": "Treppenreinigung",
+        "desc": "Saubere Treppenhäuser und Gemeinschaftsbereiche für Mehrfamilienhäuser und Wohnanlagen. Regelmäßige Reinigung nach Absprache mit Hausverwaltungen.",
+        "features": ["Treppenstufen & Geländer", "Briefkästen & Eingangsbereiche", "Keller & Aufzüge", "Regelmäßige Turnus"]
+      },
+      {
+        "title": "Fensterreinigung",
+        "desc": "Streifenfreie und makellos saubere Fenster für mehr Licht in Ihrem Zuhause oder Büro. Innen und außen, für alle Gebäudetypen.",
+        "features": ["Innen & Außen", "Streifenfrei", "Fensterrahmen & Dichtungen", "Alle Gebäudetypen"]
+      },
+      {
+        "title": "Büroreinigung in Herne",
+        "desc": "Saubere Arbeitsumgebungen für mehr Produktivität. Tägliche, wöchentliche oder monatliche Reinigung für Büros und Gewerbeflächen – diskret und effizient.",
+        "features": ["Schreibtische & Böden", "Sanitäranlagen", "Küchen & Pausenräume", "Flexible Zeiten"]
+      }
+    ],
+    "cta": "Angebot anfragen"
+  },
+  "about": {
+    "hero": {
+      "title": "Das Team hinter Beez",
+      "subtitle": "Ihr Beez – Flüchtig, präzise, effizient."
+    },
+    "story": "Bei Beez glauben wir, dass jedes Zuhause das Potenzial hat, ein Ort der Ruhe und Sauberkeit zu sein. Unser Team aus erfahrenen Reinigungsprofis arbeitet täglich mit Leidenschaft und Sorgfalt, um Ihnen das sauberste Ergebnis zu liefern. Wir kennen uns aus und setzen auf umweltfreundliche Methoden, die sowohl Ihr Zuhause als auch die Natur schonen. Vertrauen Sie auf Beez – wir machen Ihren Alltag sauberer.",
+    "values": {
+      "title": "Unsere Werte",
+      "items": [
+        { "title": "Zuverlässigkeit", "desc": "Pünktliche Termine und verlässliche Reinigung – immer und überall." },
+        { "title": "Qualität", "desc": "Höchste Reinigungsstandards bei jedem Einsatz." },
+        { "title": "Pünktlichkeit", "desc": "Wir respektieren Ihre Zeit und halten jeden Termin zuverlässig ein." },
+        { "title": "Sauberkeit", "desc": "Maximale Sorgfalt bei jedem Detail, für ein makelloses Ergebnis." }
+      ]
+    },
+    "cta": {
+      "title": "Lernen Sie uns kennen",
+      "subtitle": "Kontaktieren Sie uns für ein unverbindliches Gespräch.",
+      "button": "Kontakt aufnehmen"
+    }
+  },
+  "pricing": {
+    "hero": {
+      "badge": "Transparente Preisgestaltung",
+      "title": "Unsere Preise in Herne",
+      "subtitle": "Faire und transparente Preise für professionelle Reinigungsleistungen. Individuelle Angebote auf Anfrage."
+    },
+    "headline": "Ab 15€/Stunde",
+    "headlineSubtitle": "Professionelle Reinigung zum fairen Preis",
+    "plans": [
+      {
+        "badge": "BASIC",
+        "title": "Haushaltsreinigung",
+        "price": "Ab 15€/Stunde",
+        "subtitle": "Regelmäßige Reinigung für Ihr Zuhause",
+        "featured": false,
+        "features": [
+          "Reinigung ab 3 Stunden",
+          "Flexibles Timing",
+          "20% Rabatt bei Stammkunden",
+          "Inklusive Fahrtkosten"
+        ],
+        "cta": "Jetzt buchen"
+      },
+      {
+        "badge": "BELIEBT",
+        "title": "Grundreinigung",
+        "price": "Individuelles Angebot",
+        "subtitle": "Perfekte Tiefenreinigung für jeden Anlass",
+        "featured": true,
+        "features": [
+          "Komplette Hausreinigung",
+          "Fenster & Küche",
+          "Hinter Möbeln reinigen",
+          "Ab 5 Stunden / Pauschalen",
+          "Auf- und Auszugsreinigung"
+        ],
+        "cta": "Angebot anfragen"
+      },
+      {
+        "badge": "GEWERBE",
+        "title": "Büros & Gewerbe",
+        "price": "Individuelles Angebot",
+        "subtitle": "Professionelle Reinigung für Firmenkunden und Gewerbe",
+        "featured": false,
+        "features": [
+          "Firmenkunden-Rabatte",
+          "Tägliche Reinigung möglich",
+          "Professionelle Ausrüstung",
+          "Professionelle Reinigungstools",
+          "Individuelle Vertragsgestaltung",
+          "Mit Haftpflichtversicherung"
+        ],
+        "cta": "Angebot anfragen"
+      }
+    ],
+    "custom": {
+      "icon": "💡",
+      "title": "Individuelle Preise auf Anfrage",
+      "desc": "Sie haben besondere Anforderungen? Wir erstellen Ihnen ein maßgeschneidertes Angebot, das genau auf Ihre Bedürfnisse zugeschnitten ist. Kein Auftrag ist zu groß oder zu klein für uns.",
+      "cta": "Kostenloses Angebot anfordern →"
+    }
+  },
+  "contact": {
+    "hero": {
+      "badge": "Kontakt",
+      "title": "Kontaktieren Sie uns in Herne",
+      "subtitle": "Wir freuen uns auf Ihre Anfrage. Lassen Sie uns gemeinsam Ihren individuell abgestimmten Reinigungsplan erstellen."
+    },
+    "form": {
+      "title": "Schreiben Sie uns",
+      "subtitle": "Füllen Sie das Formular aus und wir melden uns innerhalb von 24 Stunden bei Ihnen.",
+      "name": "Name *",
+      "namePlaceholder": "Ihr vollständiger Name",
+      "phone": "Telefon *",
+      "phonePlaceholder": "+49",
+      "email": "E-Mail",
+      "emailPlaceholder": "ihre@email.de",
+      "service": "Leistung",
+      "servicePlaceholder": "Bitte wählen...",
+      "serviceOptions": [
+        "Haushaltsreinigung",
+        "Grundreinigung",
+        "Treppenreinigung",
+        "Fensterreinigung",
+        "Büroreinigung",
+        "Sonstiges"
+      ],
+      "message": "Nachricht",
+      "messagePlaceholder": "Ihre Nachricht...",
+      "submit": "Nachricht absenden",
+      "sending": "Wird gesendet...",
+      "success": "Vielen Dank! Wir melden uns bald bei Ihnen.",
+      "error": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut."
+    },
+    "info": {
+      "title": "Kontaktdaten",
+      "phone": "+49 XXX XXXXXXX",
+      "email": "info@beez-cleaning.de",
+      "address": "Herne, NRW, Nordrhein-Westfalen"
+    },
+    "area": {
+      "title": "Einzugsgebiet",
+      "cities": ["Herne", "Bochum", "Gelsenkirchen", "Recklinghausen", "Dortmund"]
+    }
+  },
+  "footer": {
+    "tagline": "Professionelle Reinigungsleistungen in Herne und Umgebung",
+    "navigation": "Navigation",
+    "contact": "Kontakt & Einzugsgebiet",
+    "rights": "Beez Professional Cleaning. Alle Rechte vorbehalten.",
+    "address": "Herner Straße, Herne, NRW",
+    "serviceArea": "Herne · Bochum · Gelsenkirchen · Recklinghausen · Dortmund"
+  }
+}

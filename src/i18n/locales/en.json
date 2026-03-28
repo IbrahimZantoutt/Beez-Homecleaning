@@ -1,0 +1,269 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "about": "About Us",
+    "pricing": "Pricing",
+    "contact": "Contact",
+    "cta": "Book Now"
+  },
+  "home": {
+    "hero": {
+      "badge": "Professional Cleaning",
+      "title": "Professional Cleaning Services in Herne",
+      "subtitle": "Your reliable cleaning service in Herne and the surrounding area. We ensure a spotless home and clean offices – punctual, thorough, and discreet.",
+      "cta1": "Request a Quote",
+      "cta2": "View Pricing"
+    },
+    "stats": {
+      "clients": "Happy Clients",
+      "cities": "Cities",
+      "experience": "Years Experience",
+      "clientsValue": "500+",
+      "citiesValue": "5",
+      "experienceValue": "8+"
+    },
+    "services": {
+      "title": "Our Services",
+      "subtitle": "From household cleaning to commercial cleaning – we offer tailored solutions for every need.",
+      "home": {
+        "title": "Home Cleaning",
+        "desc": "Regular cleaning of your home so you have more time for what matters most."
+      },
+      "deep": {
+        "title": "Deep Cleaning",
+        "desc": "Intensive deep cleaning for a spotlessly clean result – ideal for moving or spring cleaning."
+      },
+      "staircase": {
+        "title": "Staircase Cleaning",
+        "desc": "Professional cleaning of stairwells and common areas."
+      },
+      "window": {
+        "title": "Window Cleaning",
+        "desc": "Streak-free, sparkling windows – for more light and a clear view."
+      },
+      "office": {
+        "title": "Office Cleaning",
+        "desc": "Clean work environments for greater productivity and well-being."
+      },
+      "building": {
+        "title": "Building Cleaning",
+        "desc": "Professional interior and exterior cleaning for residential and commercial buildings."
+      },
+      "learnMore": "Learn More"
+    },
+    "why": {
+      "title": "Why Beez?",
+      "subtitle": "We are more than just a cleaning service – we are your partner for a clean home.",
+      "points": [
+        "Reliable and experienced team",
+        "Flexible scheduling",
+        "Eco-friendly cleaning products",
+        "Fair and transparent pricing",
+        "Fully insured and certified"
+      ],
+      "cta": "About Us"
+    },
+    "serviceArea": {
+      "title": "Our Service Area",
+      "cities": "Herne · Bochum · Gelsenkirchen · Recklinghausen · Dortmund"
+    },
+    "testimonials": {
+      "title": "What Our Clients Say",
+      "subtitle": "Over 500 satisfied customers trust our cleaning services.",
+      "items": [
+        {
+          "name": "Maria Schmidt",
+          "location": "Herne",
+          "text": "Beez completely transformed our office. The team is incredibly thorough and punctual. I can only recommend them!",
+          "rating": 5
+        },
+        {
+          "name": "Thomas Müller",
+          "location": "Bochum",
+          "text": "Finally a cleaning service you can rely on. Fair prices, great results and always friendly.",
+          "rating": 5
+        },
+        {
+          "name": "Sabine Koch",
+          "location": "Gelsenkirchen",
+          "text": "The deep cleaning was fantastic! My apartment sparkles like never before. Very professional and discreet.",
+          "rating": 5
+        }
+      ]
+    },
+    "cta": {
+      "title": "Ready for a Clean Home?",
+      "subtitle": "Contact us today and schedule your first appointment. We are here for you.",
+      "button": "Request a Quote"
+    }
+  },
+  "services": {
+    "hero": {
+      "title": "Our Cleaning Services in Herne",
+      "subtitle": "Professional cleaning for residential and commercial clients in Herne and surrounding areas"
+    },
+    "items": [
+      {
+        "title": "Home Cleaning",
+        "desc": "Regular cleaning of your home on your schedule. Kitchen, bathroom, living room, bedroom – we clean thoroughly and carefully. Flexible weekly, bi-weekly or monthly appointments.",
+        "features": ["Kitchen & Bathroom", "Vacuuming & Mopping", "Surface Cleaning", "Trash Removal"]
+      },
+      {
+        "title": "Deep Cleaning",
+        "desc": "Intensive deep cleaning for special occasions: before moving in, after moving out, or as a seasonal spring clean. We leave no detail untouched.",
+        "features": ["Behind Furniture", "Cabinets Inside & Out", "Windows & Frames", "Kitchen Appliances Inside"]
+      },
+      {
+        "title": "Staircase Cleaning",
+        "desc": "Clean stairwells and common areas for apartment buildings and housing estates. Regular cleaning as agreed with property managers.",
+        "features": ["Steps & Railings", "Mailboxes & Entrances", "Basement & Elevators", "Regular Schedule"]
+      },
+      {
+        "title": "Window Cleaning",
+        "desc": "Streak-free and spotlessly clean windows for more light in your home or office. Inside and outside, for all building types.",
+        "features": ["Inside & Outside", "Streak-free", "Frames & Seals", "All Building Types"]
+      },
+      {
+        "title": "Office Cleaning in Herne",
+        "desc": "Clean work environments for greater productivity. Daily, weekly or monthly cleaning for offices and commercial spaces – discreet and efficient.",
+        "features": ["Desks & Floors", "Restrooms", "Kitchens & Break Rooms", "Flexible Hours"]
+      }
+    ],
+    "cta": "Request a Quote"
+  },
+  "about": {
+    "hero": {
+      "title": "The Team Behind Beez",
+      "subtitle": "Your Beez – Swift, precise, efficient."
+    },
+    "story": "At Beez, we believe that every home has the potential to be a place of calm and cleanliness. Our team of experienced cleaning professionals works daily with passion and care to deliver the cleanest results. We know our craft and rely on eco-friendly methods that protect both your home and the environment. Trust Beez – we make your everyday life cleaner.",
+    "values": {
+      "title": "Our Values",
+      "items": [
+        { "title": "Reliability", "desc": "Punctual appointments and dependable cleaning – always and everywhere." },
+        { "title": "Quality", "desc": "The highest cleaning standards at every job." },
+        { "title": "Punctuality", "desc": "We respect your time and keep every appointment reliably." },
+        { "title": "Cleanliness", "desc": "Maximum care in every detail, for an immaculate result." }
+      ]
+    },
+    "cta": {
+      "title": "Get to Know Us",
+      "subtitle": "Contact us for a no-obligation conversation.",
+      "button": "Get in Touch"
+    }
+  },
+  "pricing": {
+    "hero": {
+      "badge": "Transparent Pricing",
+      "title": "Our Prices in Herne",
+      "subtitle": "Fair and transparent prices for professional cleaning services. Individual quotes on request."
+    },
+    "headline": "From €15/Hour",
+    "headlineSubtitle": "Professional cleaning at a fair price",
+    "plans": [
+      {
+        "badge": "BASIC",
+        "title": "Home Cleaning",
+        "price": "From €15/Hour",
+        "subtitle": "Regular cleaning for your home",
+        "featured": false,
+        "features": [
+          "Cleaning from 3 hours",
+          "Flexible timing",
+          "20% discount for regular clients",
+          "Travel costs included"
+        ],
+        "cta": "Book Now"
+      },
+      {
+        "badge": "POPULAR",
+        "title": "Deep Cleaning",
+        "price": "Individual Quote",
+        "subtitle": "Perfect deep cleaning for every occasion",
+        "featured": true,
+        "features": [
+          "Complete house cleaning",
+          "Windows & kitchen",
+          "Behind furniture",
+          "From 5 hours / flat rates",
+          "Move-in & move-out cleaning"
+        ],
+        "cta": "Request Quote"
+      },
+      {
+        "badge": "COMMERCIAL",
+        "title": "Offices & Commercial",
+        "price": "Individual Quote",
+        "subtitle": "Professional cleaning for commercial clients",
+        "featured": false,
+        "features": [
+          "Corporate discounts",
+          "Daily cleaning possible",
+          "Professional equipment",
+          "Professional cleaning tools",
+          "Individual contract design",
+          "With liability insurance"
+        ],
+        "cta": "Request Quote"
+      }
+    ],
+    "custom": {
+      "icon": "💡",
+      "title": "Individual Pricing on Request",
+      "desc": "Do you have special requirements? We will create a customized quote tailored exactly to your needs. No job is too big or too small for us.",
+      "cta": "Request Free Quote →"
+    }
+  },
+  "contact": {
+    "hero": {
+      "badge": "Contact",
+      "title": "Contact Us in Herne",
+      "subtitle": "We look forward to your inquiry. Let us create your individually tailored cleaning plan together."
+    },
+    "form": {
+      "title": "Write to Us",
+      "subtitle": "Fill out the form and we will get back to you within 24 hours.",
+      "name": "Name *",
+      "namePlaceholder": "Your full name",
+      "phone": "Phone *",
+      "phonePlaceholder": "+49",
+      "email": "Email",
+      "emailPlaceholder": "your@email.de",
+      "service": "Service",
+      "servicePlaceholder": "Please select...",
+      "serviceOptions": [
+        "Home Cleaning",
+        "Deep Cleaning",
+        "Staircase Cleaning",
+        "Window Cleaning",
+        "Office Cleaning",
+        "Other"
+      ],
+      "message": "Message",
+      "messagePlaceholder": "Your message...",
+      "submit": "Send Message",
+      "sending": "Sending...",
+      "success": "Thank you! We will get back to you soon.",
+      "error": "Something went wrong. Please try again."
+    },
+    "info": {
+      "title": "Contact Details",
+      "phone": "+49 XXX XXXXXXX",
+      "email": "info@beez-cleaning.de",
+      "address": "Herne, NRW, North Rhine-Westphalia"
+    },
+    "area": {
+      "title": "Service Area",
+      "cities": ["Herne", "Bochum", "Gelsenkirchen", "Recklinghausen", "Dortmund"]
+    }
+  },
+  "footer": {
+    "tagline": "Professional cleaning services in Herne and surrounding areas",
+    "navigation": "Navigation",
+    "contact": "Contact & Service Area",
+    "rights": "Beez Professional Cleaning. All rights reserved.",
+    "address": "Herner Straße, Herne, NRW",
+    "serviceArea": "Herne · Bochum · Gelsenkirchen · Recklinghausen · Dortmund"
+  }
+}
