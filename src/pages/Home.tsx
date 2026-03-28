@@ -91,17 +91,14 @@ export default function HomePage() {
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left: content */}
-          <div>
-            <span className="inline-block bg-[#C9A84C]/20 text-[#F5C842] text-xs font-semibold tracking-widest uppercase px-4 py-1.5 rounded-full mb-6 border border-[#C9A84C]/30">
-              {t('home.hero.badge')}
-            </span>
+          <div className="text-center lg:text-left">
             <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-[#FAFAFA] leading-tight mb-6">
               {t('home.hero.title')}
             </h1>
-            <p className="text-[#FAFAFA]/70 text-lg leading-relaxed mb-8 max-w-lg">
+            <p className="text-[#FAFAFA]/70 text-lg leading-relaxed mb-8 max-w-lg mx-auto lg:mx-0">
               {t('home.hero.subtitle')}
             </p>
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
               <Link
                 to="/kontakt"
                 className="bg-[#C9A84C] hover:bg-[#F5C842] text-[#0D0D0D] font-semibold px-8 py-3.5 rounded-full transition-all duration-200 text-sm"
@@ -121,18 +118,16 @@ export default function HomePage() {
           <div className="relative">
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
               <img
-                src="/src/assets/hero-cleaner.png"
+                src="/images/generated-1774721750049.png"
                 alt="Professional cleaner"
                 className="w-full h-[420px] object-cover"
                 onError={(e) => {
-                  e.currentTarget.style.display = 'none'
-                  const parent = e.currentTarget.parentElement
-                  if (parent) {
-                    parent.style.background = 'linear-gradient(135deg, #1a1a1a 0%, #2a2a1a 100%)'
-                    parent.style.height = '420px'
-                    parent.style.display = 'flex'
-                    parent.style.alignItems = 'center'
-                    parent.style.justifyContent = 'center'
+                  // fallback to another available image
+                  const el = e.currentTarget
+                  if (el.src.includes('1774721750049')) {
+                    el.src = '/images/generated-1774721422345.png'
+                  } else {
+                    el.style.display = 'none'
                   }
                 }}
               />
