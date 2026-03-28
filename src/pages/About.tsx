@@ -81,19 +81,19 @@ export default function AboutPage() {
       </section>
 
       {/* TEAM PHOTO */}
-      <section className="py-0">
+      <section className="py-0 mb-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="rounded-2xl overflow-hidden">
             <img
-              src="/src/assets/hero-cleaner.png"
+              src="/images/generated-1774721750289.png"
               alt="Beez Team"
               className="w-full h-[400px] sm:h-[500px] object-cover"
               onError={(e) => {
-                e.currentTarget.style.display = 'none'
-                const parent = e.currentTarget.parentElement
-                if (parent) {
-                  parent.style.background = 'linear-gradient(135deg, #1a1a1a 0%, #2a2a1a 100%)'
-                  parent.style.minHeight = '400px'
+                const el = e.currentTarget
+                if (el.src.includes('1774721750289')) {
+                  el.src = '/images/generated-1774721826880.png'
+                } else {
+                  el.style.display = 'none'
                 }
               }}
             />

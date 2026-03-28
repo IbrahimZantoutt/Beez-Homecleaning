@@ -203,13 +203,16 @@ export default function HomePage() {
           {/* Image */}
           <div className="relative rounded-2xl overflow-hidden order-2 lg:order-1">
             <img
-              src="/src/assets/hero-cleaner.png"
+              src="/images/generated-1774721926445.png"
               alt="Beez Team"
               className="w-full h-[400px] object-cover"
               onError={(e) => {
-                e.currentTarget.parentElement!.style.background = 'linear-gradient(135deg, #1a1a1a 0%, #2a1a0a 100%)'
-                e.currentTarget.parentElement!.style.minHeight = '400px'
-                e.currentTarget.style.display = 'none'
+                const el = e.currentTarget
+                if (el.src.includes('1774721926445')) {
+                  el.src = '/images/generated-1774721983873.png'
+                } else {
+                  el.style.display = 'none'
+                }
               }}
             />
           </div>
