@@ -1,6 +1,7 @@
-import { useState } from 'react'
+import { useState, type RefObject } from 'react'
 import { useTranslation } from 'react-i18next'
 import { Helmet } from 'react-helmet-async'
+import { useReveal } from '../hooks/useReveal'
 
 interface FormState {
   name: string
@@ -17,6 +18,9 @@ export default function ContactPage() {
 
   const serviceOptions = t('contact.form.serviceOptions', { returnObjects: true }) as string[]
   const areaCities = t('contact.area.cities', { returnObjects: true }) as string[]
+
+  const heroReveal    = useReveal()
+  const contentReveal = useReveal()
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     setForm(prev => ({ ...prev, [e.target.name]: e.target.value }))
@@ -52,7 +56,10 @@ export default function ContactPage() {
 
       {/* HERO */}
       <section className="bg-[#0D0D0D] pt-32 pb-16 text-center">
-        <div className="max-w-3xl mx-auto px-4">
+        <div
+          ref={heroReveal.ref as RefObject<HTMLDivElement>}
+          className={`max-w-3xl mx-auto px-4 reveal ${heroReveal.visible ? 'visible' : ''}`}
+        >
           <span className="inline-block text-[#C9A84C] text-xs font-semibold tracking-widest uppercase mb-4">
             {t('contact.hero.badge')}
           </span>
@@ -68,8 +75,11 @@ export default function ContactPage() {
       </section>
 
       {/* MAIN CONTENT */}
-      <section className="bg-[#FAFAFA] py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-5 gap-10">
+      <section
+        ref={contentReveal.ref as RefObject<HTMLElement>}
+        className="bg-[#FAFAFA] py-16"
+      >
+        <div className={`max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-5 gap-10 reveal ${contentReveal.visible ? 'visible' : ''}`}>
 
           {/* FORM — 3/5 */}
           <div className="lg:col-span-3">

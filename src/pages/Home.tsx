@@ -1,6 +1,8 @@
+import { type RefObject } from 'react'
 import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { Helmet } from 'react-helmet-async'
+import { useReveal } from '../hooks/useReveal'
 
 // Gold hexagon SVG for animated pattern
 function Hexagon({ className }: { className?: string }) {
@@ -53,6 +55,12 @@ const SERVICE_KEYS = ['home', 'deep', 'staircase', 'window', 'office', 'building
 export default function HomePage() {
   const { t } = useTranslation()
 
+  const statsReveal   = useReveal()
+  const servicesReveal = useReveal()
+  const whyReveal     = useReveal()
+  const testimonialsReveal = useReveal()
+  const ctaReveal     = useReveal()
+
   const services = SERVICE_KEYS.map((key, i) => ({
     icon: SERVICE_ICONS[i],
     title: t(`home.services.${key}.title`),
@@ -92,13 +100,13 @@ export default function HomePage() {
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left: content */}
           <div className="text-center lg:text-left">
-            <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-[#FAFAFA] leading-tight mb-6">
+            <h1 className="hero-fade-up font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-[#FAFAFA] leading-tight mb-6">
               {t('home.hero.title')}
             </h1>
-            <p className="text-[#FAFAFA]/70 text-lg leading-relaxed mb-8 max-w-lg mx-auto lg:mx-0">
+            <p className="hero-fade-up-delay text-[#FAFAFA]/70 text-lg leading-relaxed mb-8 max-w-lg mx-auto lg:mx-0">
               {t('home.hero.subtitle')}
             </p>
-            <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
+            <div className="hero-fade-up-delay2 flex flex-wrap gap-4 justify-center lg:justify-start">
               <Link
                 to="/kontakt"
                 className="bg-[#C9A84C] hover:bg-[#F5C842] text-[#0D0D0D] font-semibold px-8 py-3.5 rounded-full transition-all duration-200 text-sm"
@@ -115,7 +123,7 @@ export default function HomePage() {
           </div>
 
           {/* Right: hero image */}
-          <div className="relative">
+          <div className="hero-fade-up-delay3 relative">
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
               <img
                 src="/images/generated-1774721750049.png"
@@ -140,9 +148,12 @@ export default function HomePage() {
       </section>
 
       {/* STATS STRIP */}
-      <section className="bg-[#F9F5EC] py-10">
+      <section
+        ref={statsReveal.ref as React.RefObject<HTMLElement>}
+        className="bg-[#F9F5EC] py-10"
+      >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-3 gap-6 text-center">
+          <div className={`grid grid-cols-3 gap-6 text-center reveal-stagger ${statsReveal.visible ? 'visible' : ''}`}>
             {[
               { value: t('home.stats.clientsValue'), label: t('home.stats.clients') },
               { value: t('home.stats.citiesValue'), label: t('home.stats.cities') },
@@ -160,9 +171,12 @@ export default function HomePage() {
       </section>
 
       {/* SERVICES */}
-      <section className="bg-[#FAFAFA] py-20">
+      <section
+        ref={servicesReveal.ref as React.RefObject<HTMLElement>}
+        className="bg-[#FAFAFA] py-20"
+      >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-14">
+          <div className={`text-center mb-14 reveal ${servicesReveal.visible ? 'visible' : ''}`}>
             <h2 className="font-display text-3xl sm:text-4xl font-bold text-[#0D0D0D] mb-4">
               {t('home.services.title')}
             </h2>
@@ -171,11 +185,11 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className={`grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 reveal-stagger ${servicesReveal.visible ? 'visible' : ''}`}>
             {services.map((svc) => (
               <div
                 key={svc.title}
-                className="group bg-white rounded-2xl p-6 shadow-sm border border-[#f0ebe0] hover:border-[#C9A84C]/40 hover:shadow-md transition-all duration-300"
+                className="group bg-white rounded-2xl p-6 shadow-sm border border-[#f0ebe0] hover:border-[#C9A84C]/40 hover:shadow-md hover:-translate-y-1 transition-all duration-300"
               >
                 <div className="w-12 h-12 bg-[#C9A84C]/10 rounded-xl flex items-center justify-center text-[#C9A84C] mb-4 group-hover:bg-[#C9A84C]/20 transition-colors duration-200">
                   {svc.icon}
@@ -198,10 +212,15 @@ export default function HomePage() {
       </section>
 
       {/* WHY BEEZ */}
-      <section className="bg-[#0D0D0D] py-20">
+      <section
+        ref={whyReveal.ref as React.RefObject<HTMLElement>}
+        className="bg-[#0D0D0D] py-20"
+      >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Image */}
-          <div className="relative rounded-2xl overflow-hidden order-2 lg:order-1">
+          <div className={`relative rounded-2xl overflow-hidden order-2 lg:order-1 reveal ${whyReveal.visible ? 'visible' : ''}`}
+            style={{ transitionDelay: '0.1s' }}
+          >
             <img
               src="/images/generated-1774721926445.png"
               alt="Beez Team"
@@ -218,7 +237,7 @@ export default function HomePage() {
           </div>
 
           {/* Content */}
-          <div className="order-1 lg:order-2">
+          <div className={`order-1 lg:order-2 reveal ${whyReveal.visible ? 'visible' : ''}`}>
             <h2 className="font-display text-3xl sm:text-4xl font-bold text-[#FAFAFA] mb-4">
               {t('home.why.title')}
             </h2>
@@ -260,9 +279,12 @@ export default function HomePage() {
       </section>
 
       {/* TESTIMONIALS */}
-      <section className="bg-[#FAFAFA] py-20">
+      <section
+        ref={testimonialsReveal.ref as React.RefObject<HTMLElement>}
+        className="bg-[#FAFAFA] py-20"
+      >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-14">
+          <div className={`text-center mb-14 reveal ${testimonialsReveal.visible ? 'visible' : ''}`}>
             <h2 className="font-display text-3xl sm:text-4xl font-bold text-[#0D0D0D] mb-4">
               {t('home.testimonials.title')}
             </h2>
@@ -270,7 +292,7 @@ export default function HomePage() {
               {t('home.testimonials.subtitle')}
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className={`grid grid-cols-1 md:grid-cols-3 gap-6 reveal-stagger ${testimonialsReveal.visible ? 'visible' : ''}`}>
             {testimonials.map((item) => (
               <div
                 key={item.name}
@@ -296,8 +318,11 @@ export default function HomePage() {
       </section>
 
       {/* CTA SECTION */}
-      <section className="bg-[#C9A84C] py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <section
+        ref={ctaReveal.ref as React.RefObject<HTMLElement>}
+        className="bg-[#C9A84C] py-16"
+      >
+        <div className={`max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center reveal ${ctaReveal.visible ? 'visible' : ''}`}>
           <h2 className="font-display text-3xl sm:text-4xl font-bold text-[#0D0D0D] mb-4">
             {t('home.cta.title')}
           </h2>

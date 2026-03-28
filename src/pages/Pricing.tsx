@@ -1,6 +1,8 @@
+import { type RefObject } from 'react'
 import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { Helmet } from 'react-helmet-async'
+import { useReveal } from '../hooks/useReveal'
 
 export default function PricingPage() {
   const { t } = useTranslation()
@@ -19,6 +21,9 @@ export default function PricingPage() {
     icon: string; title: string; desc: string; cta: string
   }
 
+  const heroReveal  = useReveal()
+  const cardsReveal = useReveal()
+
   return (
     <>
       <Helmet>
@@ -32,7 +37,10 @@ export default function PricingPage() {
 
       {/* HERO */}
       <section className="bg-[#0D0D0D] pt-32 pb-16 text-center">
-        <div className="max-w-3xl mx-auto px-4">
+        <div
+          ref={heroReveal.ref as RefObject<HTMLDivElement>}
+          className={`max-w-3xl mx-auto px-4 reveal ${heroReveal.visible ? 'visible' : ''}`}
+        >
           <span className="inline-block text-[#C9A84C] text-xs font-semibold tracking-widest uppercase mb-4">
             {t('pricing.hero.badge')}
           </span>
@@ -56,9 +64,12 @@ export default function PricingPage() {
       </section>
 
       {/* PRICING CARDS */}
-      <section className="bg-[#FAFAFA] py-16">
+      <section
+        ref={cardsReveal.ref as RefObject<HTMLElement>}
+        className="bg-[#FAFAFA] py-16"
+      >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 items-start">
+          <div className={`grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 items-start reveal-stagger ${cardsReveal.visible ? 'visible' : ''}`}>
             {plans.map((plan) => (
               <div
                 key={plan.title}

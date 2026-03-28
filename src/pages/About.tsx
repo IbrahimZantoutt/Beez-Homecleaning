@@ -1,6 +1,8 @@
+import { type RefObject } from 'react'
 import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { Helmet } from 'react-helmet-async'
+import { useReveal } from '../hooks/useReveal'
 
 const VALUE_ICONS = [
   // Reliability
@@ -28,6 +30,12 @@ export default function AboutPage() {
     title: string; desc: string
   }>
 
+  const heroReveal   = useReveal()
+  const storyReveal  = useReveal()
+  const valuesReveal = useReveal()
+  const photoReveal  = useReveal()
+  const ctaReveal    = useReveal()
+
   return (
     <>
       <Helmet>
@@ -41,7 +49,10 @@ export default function AboutPage() {
 
       {/* HERO */}
       <section className="bg-[#0D0D0D] pt-32 pb-16 text-center">
-        <div className="max-w-3xl mx-auto px-4">
+        <div
+          ref={heroReveal.ref as RefObject<HTMLDivElement>}
+          className={`max-w-3xl mx-auto px-4 reveal ${heroReveal.visible ? 'visible' : ''}`}
+        >
           <h1 className="font-display text-4xl sm:text-5xl font-bold text-[#F5C842] mb-4">
             {t('about.hero.title')}
           </h1>
@@ -53,7 +64,10 @@ export default function AboutPage() {
 
       {/* STORY */}
       <section className="bg-[#F9F5EC] py-16">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6">
+        <div
+          ref={storyReveal.ref as RefObject<HTMLDivElement>}
+          className={`max-w-3xl mx-auto px-4 sm:px-6 reveal ${storyReveal.visible ? 'visible' : ''}`}
+        >
           <p className="text-[#0D0D0D]/75 leading-relaxed text-base sm:text-lg text-center">
             {t('about.story')}
           </p>
@@ -61,15 +75,18 @@ export default function AboutPage() {
       </section>
 
       {/* VALUES */}
-      <section className="bg-[#FAFAFA] py-20">
+      <section
+        ref={valuesReveal.ref as RefObject<HTMLElement>}
+        className="bg-[#FAFAFA] py-20"
+      >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="font-display text-3xl sm:text-4xl font-bold text-[#0D0D0D] text-center mb-14">
+          <h2 className={`font-display text-3xl sm:text-4xl font-bold text-[#0D0D0D] text-center mb-14 reveal ${valuesReveal.visible ? 'visible' : ''}`}>
             {t('about.values.title')}
           </h2>
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
+          <div className={`grid grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 reveal-stagger ${valuesReveal.visible ? 'visible' : ''}`}>
             {values.map((val, i) => (
               <div key={val.title} className="text-center">
-                <div className="w-16 h-16 bg-[#C9A84C]/10 rounded-2xl flex items-center justify-center text-[#C9A84C] mx-auto mb-4">
+                <div className="w-16 h-16 bg-[#C9A84C]/10 rounded-2xl flex items-center justify-center text-[#C9A84C] mx-auto mb-4 transition-transform duration-300 hover:scale-110">
                   {VALUE_ICONS[i]}
                 </div>
                 <h3 className="font-display font-bold text-[#0D0D0D] mb-2">{val.title}</h3>
@@ -81,9 +98,12 @@ export default function AboutPage() {
       </section>
 
       {/* TEAM PHOTO */}
-      <section className="py-0 mb-16">
+      <section
+        ref={photoReveal.ref as RefObject<HTMLElement>}
+        className="py-0 mb-16"
+      >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="rounded-2xl overflow-hidden">
+          <div className={`rounded-2xl overflow-hidden reveal ${photoReveal.visible ? 'visible' : ''}`}>
             <img
               src="/images/generated-1774721750289.png"
               alt="Beez Team"
@@ -103,7 +123,10 @@ export default function AboutPage() {
 
       {/* CTA */}
       <section className="bg-[#0D0D0D] py-16 text-center">
-        <div className="max-w-2xl mx-auto px-4">
+        <div
+          ref={ctaReveal.ref as RefObject<HTMLDivElement>}
+          className={`max-w-2xl mx-auto px-4 reveal ${ctaReveal.visible ? 'visible' : ''}`}
+        >
           <h2 className="font-display text-3xl font-bold text-[#FAFAFA] mb-3">
             {t('about.cta.title')}
           </h2>

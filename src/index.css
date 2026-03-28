@@ -29,6 +29,60 @@
   }
 }
 
+/* ── Scroll reveal ─────────────────────────────── */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.55s ease, transform 0.55s ease;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Staggered children */
+.reveal-stagger > * {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.reveal-stagger.visible > *:nth-child(1) { opacity: 1; transform: none; transition-delay: 0.05s; }
+.reveal-stagger.visible > *:nth-child(2) { opacity: 1; transform: none; transition-delay: 0.15s; }
+.reveal-stagger.visible > *:nth-child(3) { opacity: 1; transform: none; transition-delay: 0.25s; }
+.reveal-stagger.visible > *:nth-child(4) { opacity: 1; transform: none; transition-delay: 0.35s; }
+.reveal-stagger.visible > *:nth-child(5) { opacity: 1; transform: none; transition-delay: 0.45s; }
+.reveal-stagger.visible > *:nth-child(6) { opacity: 1; transform: none; transition-delay: 0.55s; }
+
+/* Hero fade-up on load */
+@keyframes heroFadeUp {
+  from { opacity: 0; transform: translateY(32px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.hero-fade-up {
+  animation: heroFadeUp 0.7s ease forwards;
+}
+.hero-fade-up-delay {
+  opacity: 0;
+  animation: heroFadeUp 0.7s ease 0.2s forwards;
+}
+.hero-fade-up-delay2 {
+  opacity: 0;
+  animation: heroFadeUp 0.7s ease 0.38s forwards;
+}
+.hero-fade-up-delay3 {
+  opacity: 0;
+  animation: heroFadeUp 0.7s ease 0.52s forwards;
+}
+
+/* Page enter */
+@keyframes pageFade {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+.page-enter {
+  animation: pageFade 0.35s ease forwards;
+}
+
 /* Hexagon animation keyframes */
 @keyframes hexFloat1 {
   0%, 100% { transform: translateY(0px) rotate(0deg); opacity: 0.12; }
